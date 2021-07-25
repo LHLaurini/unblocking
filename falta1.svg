@@ -8,8 +8,23 @@
    version="1.1"
    id="svg2225"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="apresentação2.svg"
-   onload="javascript:(() =&gt; { const corrente = document.getElementById('corrente'); const corrente2 = document.getElementById('corrente2'); window.setInterval(() =&gt; { corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.25; corrente2.style['stroke-dashoffset'] = Number.parseFloat(corrente2.style['stroke-dashoffset']) + 0.25; }, 10); })()"
+   sodipodi:docname="falta1.svg"
+   onload="const corrente = document.getElementById('corrente');
+const corrente2 = document.getElementById('corrente2');
+window.setInterval(() =&gt; {
+	corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.25;
+	corrente2.style['stroke-dashoffset'] = Number.parseFloat(corrente2.style['stroke-dashoffset']) + 0.25;
+}, 10);
+document.addEventListener('keydown', (ev) =&gt; {
+	if (ev.key == 'ArrowLeft') {
+		console.log('previous!');
+		window.location.href = &quot;./nominal.svg&quot;;
+	}
+	if (ev.key == 'ArrowRight') {
+		console.log('next!');
+		window.location.href = &quot;./falta2.svg&quot;;
+	}
+});"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +53,7 @@
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:zoom="0.64"
-     inkscape:cx="665.625"
+     inkscape:cx="395.3125"
      inkscape:cy="388.28125"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
@@ -255,12 +270,6 @@
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M -20.46145,89.6849 H 5.74272"
        id="path4658"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
-       d="M 5.74272,103.18489 H 31.94689"
-       id="path4660"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
@@ -504,12 +513,6 @@
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 125.75523,89.684903 H 99.551058"
        id="path31460"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
-       d="M 99.551058,103.18489 H 73.346886"
-       id="path31462"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
@@ -1234,5 +1237,17 @@
        d="m 54.214333,-11.371717 -3.907941,7.5377043 h 2.592473 l -1.620255,6.046875 4.272206,-7.3996785 h -2.688492 z"
        id="path52585"
        sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
+       d="M 5.74272,103.18489 H 31.94689"
+       id="path4660"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
+       d="M 99.551058,103.18489 H 73.346886"
+       id="path31462"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

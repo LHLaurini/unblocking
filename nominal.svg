@@ -8,8 +8,17 @@
    version="1.1"
    id="svg2225"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="apresentação.svg"
-   onload="javascript:(() =&gt; { const corrente = document.getElementById('corrente'); window.setInterval(() =&gt; { corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.05; }, 10) })()"
+   sodipodi:docname="nominal.svg"
+   onload="const corrente = document.getElementById('corrente');
+window.setInterval(() =&gt; {
+	corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.05;
+}, 10);
+document.addEventListener('keydown', (ev) =&gt; {
+	if (ev.key == 'ArrowRight') {
+		console.log('next!');
+		window.location.href = &quot;./falta1.svg&quot;;
+	}
+});"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +47,8 @@
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:zoom="0.90509668"
-     inkscape:cx="594.41164"
-     inkscape:cy="246.93495"
+     inkscape:cx="667.33202"
+     inkscape:cy="355.21067"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -355,12 +364,6 @@
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M -20.46145,89.6849 H 5.74272"
        id="path4658"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
-       d="M 5.74272,103.18489 H 31.94689"
-       id="path4660"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <rect
@@ -704,12 +707,6 @@
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 125.75523,89.684903 H 99.551058"
        id="path31460"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
-       d="M 99.551058,103.18489 H 73.346886"
-       id="path31462"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
@@ -1210,5 +1207,17 @@
        d="m -83.957225,-1.486974 274.743875,-2.6e-6"
        id="corrente"
        onclick="" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
+       d="M 5.74272,103.18489 H 31.94689"
+       id="path4660"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.926042;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mend)"
+       d="M 99.551058,103.18489 H 73.346886"
+       id="path31462"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

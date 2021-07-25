@@ -8,8 +8,19 @@
    version="1.1"
    id="svg2225"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="apresentação3.svg"
-   onload="javascript:(() =&gt; { const corrente = document.getElementById('corrente'); const corrente2 = document.getElementById('corrente2'); window.setInterval(() =&gt; { corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.25; corrente2.style['stroke-dashoffset'] = Number.parseFloat(corrente2.style['stroke-dashoffset']) + 0.25; }, 10); })()"
+   sodipodi:docname="falta2.svg"
+   onload="const corrente = document.getElementById('corrente');
+const corrente2 = document.getElementById('corrente2');
+window.setInterval(() =&gt; {
+	corrente.style['stroke-dashoffset'] = Number.parseFloat(corrente.style['stroke-dashoffset']) - 0.25;
+	corrente2.style['stroke-dashoffset'] = Number.parseFloat(corrente2.style['stroke-dashoffset']) + 0.25;
+}, 10);
+document.addEventListener('keydown', (ev) =&gt; {
+	if (ev.key == 'ArrowLeft') {
+		console.log('previous!');
+		window.location.href = &quot;./falta1.svg&quot;;
+	}
+});"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +49,8 @@
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:zoom="1.8101934"
-     inkscape:cx="763.45435"
-     inkscape:cy="247.21116"
+     inkscape:cx="609.32716"
+     inkscape:cy="247.21115"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
